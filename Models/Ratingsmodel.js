@@ -19,7 +19,7 @@ const RatingSchema = new Schema(
     rating: {
       type: Number,
       min: 1,
-      max:5,
+      max: 5,
       required: true,
     },
     review: {
@@ -27,8 +27,9 @@ const RatingSchema = new Schema(
       required: true,
     },
     date: {
-      type: Date,
-      default: new Date().toLocaleTimeString(),
+      type: String,
+      default: () => new Date(),
+      required: true,
     },
   },
   {

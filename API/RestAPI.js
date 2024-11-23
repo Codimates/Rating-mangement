@@ -6,6 +6,6 @@ const rourter = express.Router();
 rourter.post("/addRatings",RatingAdd);
 rourter.get("/getRatings",RatingGet);
 rourter.delete("/deleteRatings",deleteRating);
-rourter.post("/calculateTotalRating",calculatetotalrating);
+rourter.get("/calculateTotalRating",calculatetotalrating);
 
 export default rourter;
